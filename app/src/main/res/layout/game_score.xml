@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/texture"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topRel"
+    android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/highScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:text=" 00"
+            android:textSize="28sp" />
+ <TextView
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+     android:textColor="@android:color/background_light"
+     android:layout_height="wrap_content"
+     android:textStyle="bold"
+     android:layout_toEndOf="@+id/hctv"
+             android:text=" 00"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/highScoretv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/highScore"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/highScore"
+            android:text="HIGH SCORE:"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/hctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/highScoretv"
+            android:textStyle="bold"
+            android:text="CURRENT SCORE:"
+            android:textColor="@android:color/background_light"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:text="00:00" />
+</RelativeLayout>
